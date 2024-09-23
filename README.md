@@ -41,5 +41,5 @@ To run CalcOS v1.0, you'll need the following hardware:
 1. **Clone the Repository**
    Clone the CalcOS repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/yourusername/CalcOS.git
+   git clone https://github.com/GOLUPO/CalcOS.git
    cd CalcOS

@@ -1,39 +1,45 @@
-# CalcOS - An Advanced Operating System for Scientific Calculators
+# CalcOS v1.0 - The First Release of CalcOS
 
-**CalcOS** is a lightweight and advanced operating system designed for ESP32-based scientific calculators. It combines the functionalities of a traditional scientific calculator with an expandable ecosystem of apps, supporting advanced calculations, internet connectivity, and interactive modes like **ChatGPT**. This project aims to provide a powerful tool for students, teachers, and electronics enthusiasts to enhance productivity and learning.
+**CalcOS v1.0** is the first release of the operating system for ESP32-based scientific calculators. This version introduces the core functionality, offering both a traditional scientific calculator mode and an app-based interface that allows users to access additional tools such as **ChatGPT**, unit converters, prime checkers, and more.
 
-## Key Features
+## Features in CalcOS v1.0
 
-- **Advanced Scientific Calculator**: Supports basic and advanced operations like trigonometry, logarithms, exponentials, etc.
-- **Customizable Apps**: An internal "App Store" allows downloading new apps, system updates, and even creating custom apps.
-- **ChatGPT Integration**: Uses OpenAI to answer questions, explain calculations, and provide suggestions.
-- **Standby Mode**: Saves power when not in use.
-- **Modern Interface**: OLED display to show menus, apps, and calculation results.
-- **Wi-Fi Support**: Internet connectivity for apps like currency converter and system updates.
+### 1. Advanced Scientific Calculator
+CalcOS v1.0 includes a fully functional scientific calculator with support for:
+- **Basic arithmetic operations**: addition, subtraction, multiplication, and division.
+- **Advanced operations**: trigonometric functions (sin, cos, tan), logarithms, exponentials, square roots, and factorials.
+- **Memory functions**: store and recall values.
+- **Parentheses**: for handling order of operations.
 
-## Required Hardware
+### 2. App Mode
+In addition to the calculator, CalcOS v1.0 provides an app interface where users can access a range of utilities:
 
-1. **ESP32 Dev Kit**: Microcontroller with built-in Wi-Fi and Bluetooth.
-2. **128x64 OLED Display (SSD1306)**: To display the operating system interface.
-3. **4x4 or 5x4 Matrix Keypad**: For input and navigation.
-4. **Buzzer and LED Indicators**: For sound and visual feedback.
-5. **3.7V Li-Po Battery** and **TP4056 Module**: For portable power and safe charging.
+- **ChatGPT**: Ask questions and receive intelligent answers via OpenAI's GPT model. Ideal for educational support and complex explanations.
+- **Unit Converter**: Convert between various units of length, weight, volume, and temperature.
+- **Prime Checker**: Input a number and check if it is prime.
+  
+More apps will be added in future updates, including matrix calculators, currency converters, and advanced math tools.
 
-## Operating System Features
+### 3. Simple User Interface
+The OS has a clean, menu-based interface accessible through a 128x64 OLED display. The keypad is used to navigate between the calculator mode and different apps.
 
-- **Calculator Mode**: Performs standard scientific calculations.
-- **App Mode**: Access to a range of apps such as:
-  - **Unit Converter**: Convert between various units of measurement.
-  - **Currency Converter**: Up-to-date exchange rates via the internet.
-  - **Prime Checker**: Check if a number is prime.
-  - **Matrix Calculator**: Perform matrix operations.
-  - **ChatGPT**: Intelligent responses via OpenAI API.
-- **Internal App Store**: Allows downloading apps and system updates.
-- **Standby Mode**: Reduces power consumption when inactive.
+### 4. Power-Saving Standby Mode
+To conserve battery power, CalcOS v1.0 automatically enters standby mode after 5 minutes of inactivity. Users can wake the device by pressing any key.
 
-## Installation Guide
+## Getting Started with CalcOS v1.0
+
+### Requirements
+To run CalcOS v1.0, you'll need the following hardware:
+- **ESP32 Dev Kit**: The main microcontroller unit with Wi-Fi capabilities.
+- **128x64 OLED Display (SSD1306)**: Used for the interface.
+- **4x4 or 5x4 Matrix Keypad**: For input and menu navigation.
+- **Li-Po Battery (3.7V)**: For powering the device.
+- **TP4056 Charging Module**: For recharging the battery.
+  
+### Installation Guide
 
 1. **Clone the Repository**
+   Clone the CalcOS repository to your local machine using the following command:
    ```bash
-   git clone https://github.com/GOLUPO/CalcOS.git
+   git clone https://github.com/yourusername/CalcOS.git
    cd CalcOS
